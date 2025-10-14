@@ -3,4 +3,5 @@ return {
     "clangd",
     "jdtls",
     "cmake-language-server",
+    "json-lsp"
 }
