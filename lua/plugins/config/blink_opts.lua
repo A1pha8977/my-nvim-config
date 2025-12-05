@@ -6,6 +6,18 @@ return {
     },
     keymap = {
         preset = "super-tab",
+        ["<CR>"] = { "accept", "fallback" },
+
+        ["<Tab>"] = {
+            "snippet_forward",
+            "select_next",
+            "fallback",
+        },
+        ["<S-Tab>"] = {
+            "snippet_backward",
+            "select_prev",
+            "fallback",
+        },
     },
     sources = {
         default = { "path", "snippets", "buffer", "lsp" },
