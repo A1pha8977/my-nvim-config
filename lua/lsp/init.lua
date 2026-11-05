@@ -30,7 +30,6 @@ function M.setup(capabilities)
             map("gi", vim.lsp.buf.implementation, "Go to implementation")
             map("gr", vim.lsp.buf.references, "Find references")
             map("K", vim.lsp.buf.hover, "Hover documentation")
-            map("<leader>lr", vim.lsp.buf.rename, "Rename symbol")
             map("<leader>le", vim.diagnostic.open_float, "Show line diagnostics")
         end,
     })
